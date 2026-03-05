@@ -2,8 +2,8 @@
 
 export const config = {
   // Default model (use --fast for spark)
-  model: "gpt-5.3-codex",
-  fastModel: "gpt-5.3-codex-spark",
+  model: "gpt-5.4",
+  fastModel: "gpt-5.4-spark",
 
   // Reasoning effort levels
   reasoningEfforts: ["low", "medium", "high", "xhigh"] as const,

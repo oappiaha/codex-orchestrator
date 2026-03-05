@@ -47,8 +47,8 @@ Usage:
 
 Options:
   -r, --reasoning <level>    Reasoning effort: low, medium, high, xhigh (default: xhigh)
-  -m, --model <model>        Model name (default: gpt-5.3-codex)
-  --fast                     Use fast model (gpt-5.3-codex-spark)
+  -m, --model <model>        Model name (default: gpt-5.4)
+  --fast                     Use fast model (gpt-5.4-spark)
   -s, --sandbox <mode>       Sandbox: read-only, workspace-write, danger-full-access
   -w, --wait                 Wait for completion before exiting
   --notify-on-complete <cmd>  Run command when job completes
