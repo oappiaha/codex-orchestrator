@@ -236,8 +236,8 @@ The CLI ships with strong defaults so most commands need minimal flags:
 
 | Setting | Default | Why |
 |---------|---------|-----|
-| Model | `gpt-5.4` | Full capability model with xhigh reasoning (use `--fast` for spark) |
-| Reasoning | `xhigh` | Maximum reasoning depth - agents think deeply |
+| Model | `gpt-5.4` | Full capability model with high reasoning (use `--fast` for spark) |
+| Reasoning | `high` | Deep reasoning depth - balances quality and speed |
 | Sandbox | `workspace-write` | Agents can modify files by default |
 
 You almost never need to override these. The main flags you'll use are `--map` (include codebase context), `-s read-only` (for research tasks), and `-f` (include specific files).
@@ -368,7 +368,7 @@ codex-bg -t -- codex-agent start "task"
 # Research (read-only - override sandbox)
 codex-agent start "Investigate auth flow for vulnerabilities" --map -s read-only
 
-# Implementation (defaults are perfect - xhigh reasoning, workspace-write)
+# Implementation (defaults are perfect - high reasoning, workspace-write)
 codex-agent start "Implement the auth refactor per PRD" --map
 
 # With file context
@@ -626,13 +626,13 @@ PRD: docs/prds/auth-refactor.md
 ### Spawned: abc123 - 10:31
 Type: research
 Prompt: Investigate current auth flow, identify security gaps
-Reasoning: xhigh
+Reasoning: high
 Sandbox: read-only
 
 ### Spawned: def456 - 10:31
 Type: research
 Prompt: Analyze session management patterns
-Reasoning: xhigh
+Reasoning: high
 Sandbox: read-only
 
 ### Complete: abc123 - 10:45

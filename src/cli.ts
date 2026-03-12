@@ -46,7 +46,7 @@ Usage:
   codex-agent health                     Check tmux and codex availability
 
 Options:
-  -r, --reasoning <level>    Reasoning effort: low, medium, high, xhigh (default: xhigh)
+  -r, --reasoning <level>    Reasoning effort: low, medium, high, xhigh (default: high)
   -m, --model <model>        Model name (default: gpt-5.4)
   --fast                     Use fast model (gpt-5.4-spark)
   -s, --sandbox <mode>       Sandbox: read-only, workspace-write, danger-full-access
